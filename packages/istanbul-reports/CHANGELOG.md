@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/istanbuljs/istanbuljs/compare/istanbul-reports@3.0.0...istanbul-reports@3.1.0) (2020-02-01)
+
+
+### Features
+
+* **reporters/cobertura:** add package prefix config option ([6b3b2bc](https://github.com/istanbuljs/istanbuljs/commit/6b3b2bc1c7bab3b3fa74a6a907e4c794764eef23))
+
+
+
+
+
 # [3.0.0](https://github.com/istanbuljs/istanbuljs/compare/istanbul-reports@3.0.0-alpha.6...istanbul-reports@3.0.0) (2019-12-20)
 
 
