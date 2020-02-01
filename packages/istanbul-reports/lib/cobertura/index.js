@@ -14,6 +14,7 @@ class CoberturaReport extends ReportBase {
         this.xml = null;
         this.projectRoot = opts.projectRoot || process.cwd();
         this.file = opts.file || 'cobertura-coverage.xml';
+        this.packagePrefix = opts.packagePrefix ? opts.packagePrefix : '';
     }
 
     onStart(root, context) {
@@ -135,11 +136,13 @@ class CoberturaReport extends ReportBase {
 }
 
 function asJavaPackage(node) {
-    return node
+    const baseName = node
         .getRelativeName()
         .replace(/\//g, '.')
         .replace(/\\/g, '.')
         .replace(/\.$/, '');
+
+    return `${this.packagePrefix}.${baseName}`;
 }
 
 function asClassName(node) {
